@@ -1,13 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Pixelify+Sans:wght@500&family=Yellowtail&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  cursor: url('assets/cursor.png'), auto;
+}
+
+html:active {
+  
+}
 body {
+  font-family: 'Pixelify Sans', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+body::-webkit-scrollbar {
+  width: 13px;              
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(69, 66, 112, 0.986);       
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(78, 78, 78);   
+  border-radius: 20px;     
+  border: 2px solid rgb(8, 20, 88);
+}
+
+main {
+  position: relative;
+}
+
+.cursorEffect {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid rgb(189, 189, 189);
+  animation: cursor .3s linear 0s forwards;
+}
+
+@keyframes cursor {
+  from {
+    transform: scale(0);
+
+  }
+   to {
+    transform: scale(3);
+
+   }
 }
